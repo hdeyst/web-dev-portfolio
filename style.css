@@ -1,0 +1,160 @@
+/* global variables for color */
+:root {
+    --header-color: #424874;
+    --body-color: #C4D4D3; /* this is the grey-er of the greens */
+    --cream-color: #FDFFF7;
+    --navy-blue: #0B032D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: var(--navy-blue);
+}
+
+
+body {
+    background-color: var(--body-color);
+    font-family: 'Space Grotesk';
+
+}
+
+hr {
+    color: var(--body-color);
+    /* padding-bottom: 1%; */
+    margin-bottom: 1%;
+}
+
+#titleBar {
+    display: flex;
+    border-radius: 0px;
+
+    grid-template-columns: 1fr 1fr 6fr;
+    /* background-color: var(--header-color); */
+
+    /* margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px; */
+}
+
+#titleBar h1 {
+    font-family: 'Rambla';
+    font-size: 26px;
+
+    align-content: center;
+    padding-left: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;  
+
+}
+
+#logo {
+    align-content: center;
+    height: 75px; 
+    width: 75px; 
+    padding: 10px;
+}
+
+
+#navbar {
+    display: flex;
+    background-color: var(--cream-color);
+    overflow: auto;
+    border-radius: 0px;
+
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#navbar a {
+    flex: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-family: 'Rambla';
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: var(--body-color);
+}
+
+#navbar .active {
+    text-decoration: underline;
+    /* font-weight: bold; */
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+
+    text-align: center;
+    align-content: center;
+}
+
+.container div {
+    background-color: var(--cream-color);
+    margin: 10px;
+    padding: 20px;
+}
+
+.widget {
+    transition:
+        transform 0.3s ease, 
+        box-shadow 0.3s ease;
+    display: flex;    
+    flex-direction: column;
+}
+
+.widget a {
+    font-size: larger;
+}
+
+.widget img {
+    object-fit: cover;
+    height: 200px;
+}
+
+.widget:hover {
+    transform: scale(1.01) translateY(-1px);
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.3);
+}
+
+#carousel {
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slides {
+    display: flex;
+    height: 100%;
+    transition: 0.7s;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container { 
+        grid-template-columns: auto;
+    } 
+}

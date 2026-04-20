@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Space Grotesk" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="titleBar">
+        <a href="index.html">
+            <img id="logo" src="media/house_painting.png">
+        </a>
+
+        <h1>HD</h1>
+    </div>
+    <hr>
+
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="#">About</a>
+    </div>
+
+
+    <div class="container">
+        <div class="widget">
+            <img src="media/rummikub.png">
+            <a href="https://github.com/hdeyst/SWE-Final-Project">Rummikub</a>
+            <p>Python, Pyarcade</p>
+        </div>
+
+
+        <!-- image carousel for clerkship app -->
+        <div class="widget" id="carousel">
+            <div id="slides"></div>
+            <a href="https://github.com/lindsayh17/clerkshipApp">OBGYN Clerkship App for the UVM Medical Center</a>
+            
+            <div class="slide-controls">
+                <button id="prevBtn">
+                    <h1>&lt;</h1>
+                </button>
+                <button id="nextBtn">
+                    <h1>&gt;</h1>
+                </button>
+            </div>
+            
+            <p>Swift, Firebase</p>
+        </div>
+
+
+        <div class="widget">widget 3</div>
+        <div class="widget">widget 4</div>
+    </div>
+
+</body>
+</html>
