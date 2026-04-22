@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Space Grotesk" rel="stylesheet">
     <script src="script.js" defer></script>
+    <script src="fishAnimation.js" defer></script>
 
     <title>Portfolio</title>
 </head>
 <body>
+
     <div id="titleBar">
         <a href="index.html">
             <img id="logo" src="media/house_painting.png">
@@ -18,7 +20,9 @@
         <h1>HD</h1>
     </div>
     <hr>
-
+    <!-- background animation -->
+    <canvas id="animation" width="800" height="300"></canvas>
+    
     <div id="navbar">
         <a href="index.html">Home</a>
         <a href="projects.html" class="active">Projects</a>
@@ -27,6 +31,7 @@
 
 
     <div class="container">
+        <!-- screenshots from Rummikub -->
         <div class="widget">
             <img src="media/rummikub.png">
             <a href="https://github.com/hdeyst/SWE-Final-Project">Rummikub</a>
@@ -50,10 +55,6 @@
             
             <p>Swift, Firebase</p>
         </div>
-
-
-        <div class="widget">widget 3</div>
-        <div class="widget">widget 4</div>
     </div>
 
 </body>

@@ -42,3 +42,5 @@ lastClone.id = 'lastClone';
 
 slides.appendChild(firstClone);
 slides.prepend(lastClone);
+
+

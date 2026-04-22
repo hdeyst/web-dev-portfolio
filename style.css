@@ -1,7 +1,7 @@
 /* global variables for color */
 :root {
     --header-color: #424874;
-    --body-color: #C4D4D3; /* this is the grey-er of the greens */
+    --body-color: #c8d4e6; /* this is the grey-er of the greens */
     --cream-color: #FDFFF7;
     --navy-blue: #0B032D;
 }
@@ -18,7 +18,7 @@
 body {
     background-color: var(--body-color);
     font-family: 'Space Grotesk';
-
+    overflow: auto;
 }
 
 hr {
@@ -30,13 +30,7 @@ hr {
 #titleBar {
     display: flex;
     border-radius: 0px;
-
     grid-template-columns: 1fr 1fr 6fr;
-    /* background-color: var(--header-color); */
-
-    /* margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px; */
 }
 
 #titleBar h1 {
@@ -56,6 +50,14 @@ hr {
     height: 75px; 
     width: 75px; 
     padding: 10px;
+}
+
+#animation {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
 
@@ -103,6 +105,7 @@ hr {
     background-color: var(--cream-color);
     margin: 10px;
     padding: 20px;
+    width: 100%;
 }
 
 .widget {
@@ -111,6 +114,7 @@ hr {
         box-shadow 0.3s ease;
     display: flex;    
     flex-direction: column;
+    width: 50%;
 }
 
 .widget a {
