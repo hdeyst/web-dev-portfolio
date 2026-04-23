@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Hobbies",
+        "items": [
+            "Running",
+            "Reading",
+            "Arts & Crafts"
+        ]
+    },
+    {
+        "title": "Favorite Movies",
+        "items": [
+            "The Princess Bride",
+            "Shrek", 
+            "Little Miss Sunshine",
+            "Spirited Away"
+        ]
+    },
+    {
+        "title": "Favorite Books",
+        "items": [
+            "Circe by Madeline Miller",
+            "Flowers for Algernon by Daniel Keyes"
+        ]
+    },
+    {
+        "title": "Favorite Songs",
+        "items": [
+            "Dreams by The Cranberries",
+            "The Bottom of It by Fruit Bats",
+            "White Winter Hymnal bby Fleet Foxes"
+        ]
+    }
+
+]
