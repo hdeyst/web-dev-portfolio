@@ -4,47 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Space Grotesk" rel="stylesheet">
+    <script src="carousel.js" defer></script>
     <script src="fishAnimation.js" defer></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Space Grotesk" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
+
     <div id="titleBar">
         <a href="index.html">
             <img id="logo" src="media/house_painting.png">
         </a>
+
         <h1>Hannah's Website B)</h1>
     </div>
     <hr>
+
+    <!-- background animation -->
+    <canvas id="animation" width="800" height="300"></canvas>
+    
     <nav>
-        <div id="navbar">
-            <a href="index.html" class="active">Contact</a>
-            <a href="projects.html">CS Projects</a>
-            <a href="about.html">About</a>
-        </div>
+    <div id="navbar">
+        <a href="index.html" class="active">CS Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>   
+        
+    </div>
     </nav>
 
-    <canvas id="animation" width="800" height="300"></canvas>
 
-    <section class="contact">
-        <form id="contact-form" class="widget">
-            <h2>Contact Me</h2>
+    <div class="container">
+
+        <!-- image carousel for clerkship app -->
+        <div class="widget">
+            <a href="https://github.com/lindsayh17/clerkshipApp">OBGYN Clerkship App for the UVM Medical Center</a>
+            <div id="slides"></div>
             
-            <label>Name:</label>
-            <input type="text" id="name" required>
+            <div class="slide-controls">
+                <button id="prevBtn" onclick="plusDivs(-1)">
+                    <h1>&#10094;</h1>
+                </button>
+                <button id="nextBtn" onclick="plusDivs(1)">
+                    <h1>&#10095;</h1>
+                </button>
+            </div>
+            
+            <p>Swift, Firebase</p>
+        </div>
 
-            <label>Email:</label>
-            <input type="email" id="email" required>
-
-            <label>Message:</label>
-            <textarea id="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
-
-        <p id="form-message"></p>
-    </section>
+        <!-- screenshots from Rummikub -->
+        <div class="widget">
+            <a href="https://github.com/hdeyst/SWE-Final-Project">Rummikub</a>
+            <img src="media/rummikub.png">
+            <p>Python, Pyarcade</p>
+        </div>
+    </div>
 
 </body>
 </html>

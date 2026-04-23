@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="fishAnimation.js" defer></script>
-    <script src="fetchJSON.js" defer></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Space Grotesk" rel="stylesheet">
     <title>Portfolio</title>
@@ -21,23 +20,32 @@
     <nav>
         <div id="navbar">
             <a href="index.html">CS Projects</a>
-            <a href="about.html" class="active">About</a>
-            <a href="contact.html">Contact</a>   
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>   
 
         </div>
     </nav>
 
     <canvas id="animation" width="800" height="300"></canvas>
 
-    <div id="gallery">
-        <img src="media/me.png">
-        <div>
-            <h2>Hello! I'm Hannah, a Senior computer science major at UVM.</h2>
-            <h3 class="indent">-> Check out my github <a href="https://github.com/hdeyst">here</a></h3>
-        </div>
-    </div>
-    <div id="funFacts"></div>
+    <section class="contact">
+        <form id="contact-form" class="widget">
+            <h2>Contact Me</h2>
+            
+            <label>Name:</label>
+            <input type="text" id="name" required>
 
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <p id="form-message"></p>
+    </section>
 
 </body>
 </html>
