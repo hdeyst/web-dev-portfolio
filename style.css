@@ -59,6 +59,7 @@ hr {
 
 #navbar {
     display: flex;
+    flex-direction: row;
     background-color: var(--cream-color);
     overflow: auto;
     border-radius: 0px;
@@ -102,7 +103,7 @@ hr {
     align-content: center;
     align-items: center;
 
-    width: 75%;
+    width: 60%;
 
     background-color: var(--cream-color);
     margin: 10px;
@@ -111,6 +112,8 @@ hr {
 
 .widget a {
     font-size: larger;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .widget:hover {
@@ -120,6 +123,7 @@ hr {
 
 .widget img {
     width: 70%;
+    max-height: 400px;
     align-items: center;
 }
 
@@ -131,9 +135,9 @@ hr {
 }
 
 
-
 @media screen and (max-width: 600px) {
-    .container { 
-        grid-template-columns: auto;
+    #navbar { 
+        flex-direction: column;
+
     } 
 }
