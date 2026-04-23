@@ -19,15 +19,32 @@
     <hr>
     <nav>
         <div id="navbar">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html" class="active">Contact</a>
             <a href="projects.html">CS Projects</a>
             <a href="about.html">About</a>
         </div>
     </nav>
 
-    <h3>Hello World</h3>
-
     <canvas id="animation" width="800" height="300"></canvas>
+
+    <section class="contact">
+        <form id="contact-form" class="widget">
+            <h2>Contact Me</h2>
+            
+            <label>Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+        <p id="form-message"></p>
+    </section>
 
 </body>
 </html>

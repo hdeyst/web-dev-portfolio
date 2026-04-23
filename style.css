@@ -1,6 +1,6 @@
 /* global variables for color */
 :root {
-    --header-color: #424874;
+    --header-color: rgba(177, 197, 185, 0.674);
     --body-color: #c8d4e6; /* this is the grey-er of the greens */
     --cream-color: #FDFFF7;
     --transparent-cream: rgba(253, 255, 247, 0.733);
@@ -27,6 +27,7 @@ hr {
 }
 
 #titleBar {
+    background-color: var(--header-color);
     display: flex;
     border-radius: 0px;
     grid-template-columns: 1fr 1fr 6fr;
@@ -106,9 +107,13 @@ hr {
 
     width: 60%;
 
-    background-color: var(--cream-color);
-    margin: 10px;
+    background-color: var(--transparent-cream);
+
     padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .widget a {
@@ -171,6 +176,26 @@ hr {
 
 .indent {
     margin-left: 15px;
+}
+
+.contact {
+    padding: 15px;
+    margin: 10px;
+}
+.contact h2 {
+    padding: 5px;
+}
+.contact button {
+    margin-top: 15px;
+    padding: 10px;
+    color: var(--navy-blue);
+    background-color: var(--header-color);
+    border: none;
+}
+
+input, textarea {
+  margin-bottom: 1rem;
+  padding: 10px;
 }
 
 
