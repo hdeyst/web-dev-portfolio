@@ -13,12 +13,14 @@
     box-sizing: border-box;
     border-radius: 5px;
     color: var(--navy-blue);
+    overflow: auto;
+
 }
 
 body {
     background-color: var(--body-color);
     font-family: 'Space Grotesk';
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 hr {
@@ -63,11 +65,11 @@ hr {
     display: flex;
     flex-direction: row;
     background-color: var(--cream-color);
-    overflow: auto;
+    /* overflow: auto; */
     border-radius: 0px;
-
+/* 
     margin-left: -10px;
-    margin-right: -10px;
+    margin-right: -10px; */
 }
 
 #navbar a {
