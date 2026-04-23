@@ -3,6 +3,7 @@
     --header-color: #424874;
     --body-color: #c8d4e6; /* this is the grey-er of the greens */
     --cream-color: #FDFFF7;
+    --transparent-cream: rgba(253, 255, 247, 0.733);
     --navy-blue: #0B032D;
 }
 
@@ -134,10 +135,51 @@ hr {
     align-items: center;
 }
 
+#gallery {
+    display: grid;
+
+    transition:
+        transform 0.3s ease, 
+        box-shadow 0.3s ease;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+
+    background-color: var(--cream-color);
+    margin: 10px;
+    padding: 20px;
+}
+
+#gallery img {
+    max-height: 200px;
+    align-items: center;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#funFacts {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.funFactCard {
+    background-color: var(--transparent-cream);
+    margin: 10px;
+    padding: 20px;
+}
+
+.indent {
+    margin-left: 15px;
+}
+
 
 @media screen and (max-width: 600px) {
     #navbar { 
         flex-direction: column;
-
     } 
+
+    #funFacts {
+        grid-template-columns: auto;
+    }
 }
