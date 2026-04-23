@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&family=Space Grotesk" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="carousel.js" defer></script>
     <script src="fishAnimation.js" defer></script>
 
     <title>Portfolio</title>
@@ -40,15 +40,15 @@
 
 
         <!-- image carousel for clerkship app -->
-        <div class="widget" id="carousel">
+        <div class="widget">
             <div id="slides"></div>
             <a href="https://github.com/lindsayh17/clerkshipApp">OBGYN Clerkship App for the UVM Medical Center</a>
             
             <div class="slide-controls">
-                <button id="prevBtn">
+                <button id="prevBtn" onclick="plusDivs(-1)">
                     <h1>&lt;</h1>
                 </button>
-                <button id="nextBtn">
+                <button id="nextBtn" onclick="plusDivs(1)">
                     <h1>&gt;</h1>
                 </button>
             </div>

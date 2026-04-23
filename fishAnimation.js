@@ -57,7 +57,7 @@ function draw() {
         x = -fishWidth;
     }
     moveOne(currFish, x, randY, idx=1);
-    x += 1;
+    x += .5;
 
 
     if (!swim2) {
@@ -70,7 +70,7 @@ function draw() {
         x2 = -fishWidth;
     }
     moveOne(secondFish, x2, randY2, idx=2);
-    x2 += 2;
+    x2 += 1;
 
     ctx.save();
     ctx.restore();    
