@@ -1,0 +1,54 @@
+:root {
+    --red: #cc6a72;
+    --orange: #f3a653;
+    --blue: #446DF6;
+    --yellow: #f4db6c;
+    --purple: #96568f;
+    --red-orange: #d3610b;
+    --green: #57A773;    
+    --dark-cyan: #65a9c0;
+    --cream: #FDFFF7;
+    --shadow: #878983;
+
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    color: var(--cream);
+}
+
+.tags p {
+    /* top right bottom left */
+    margin: 15px 5px 0px 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: var(--cream);
+    text-shadow: 1px 1px 2px var(--shadow);
+}
+
+.python {
+    background-color: var(--blue);
+}
+.html {
+    background-color: var(--orange);
+}
+.css {
+    background-color: var(--purple);
+}
+.firebase {
+    background-color: var(--red);
+}
+.javascript {
+    background-color: var(--yellow);
+}
+.swift {
+    background-color: var(--red-orange);
+}
+.flask {
+    background-color: var(--green);
+}
+.pyarcade {
+    background-color: var(--dark-cyan);
+}

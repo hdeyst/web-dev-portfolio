@@ -1,7 +1,9 @@
 /* global variables for color */
 :root {
     --header-color: rgba(177, 197, 185, 0.674);
-    --body-color: #c8d4e6; /* this is the grey-er of the greens */
+    --button-hover: rgba(113, 136, 122, 0.674);
+
+    --body-color: #c8d4e6; 
     --cream-color: #FDFFF7;
     --transparent-cream: rgba(253, 255, 247, 0.733);
     --navy-blue: #0B032D;
@@ -96,6 +98,8 @@ hr {
     flex-direction: column;
     align-items: center;
     align-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .widget {
@@ -141,6 +145,14 @@ hr {
 
     width: 70%;
     align-items: center;
+}
+.slide-controls {
+    display: flex;
+    align-items: center;
+    
+    button {
+        height: 30%;
+    }
 }
 
 #gallery {
@@ -195,6 +207,10 @@ button {
     border: none;
 }
 
+button:hover {
+    background-color: var(--button-hover);
+}
+
 input, textarea {
   margin-bottom: 1em;
   padding: 10px;
@@ -206,7 +222,6 @@ footer {
     background-color: var(--header-color);
     padding: 16px;
 
-    
 }
 
 @media screen and (max-width: 600px) {
