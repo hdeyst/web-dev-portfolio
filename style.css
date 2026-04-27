@@ -4,6 +4,7 @@
     --button-hover: rgba(113, 136, 122, 0.674);
 
     --body-color: #c8d4e6; 
+    --hover-blue: #9caac8;
     --cream-color: #FDFFF7;
     --transparent-cream: rgba(253, 255, 247, 0.733);
     --navy-blue: #0B032D;
@@ -22,12 +23,6 @@
 body {
     background-color: var(--body-color);
     font-family: 'Space Grotesk';
-    
-}
-
-hr {
-    color: var(--body-color);
-    margin-bottom: 1%;
 }
 
 #titleBar {
@@ -62,16 +57,15 @@ hr {
     height: 100%;
     margin: 0;
 }
+nav {
+    border-radius: 0px;
 
+}
 #navbar {
     display: flex;
     flex-direction: row;
     background-color: var(--cream-color);
-    /* overflow: auto; */
     border-radius: 0px;
-/* 
-    margin-left: -10px;
-    margin-right: -10px; */
 }
 
 #navbar a {
@@ -86,7 +80,8 @@ hr {
 }
 
 #navbar a:hover {
-    background-color: var(--body-color);
+    background-color: var(--hover-blue);
+    /* border-radius: 0px; */
 }
 
 #navbar .active {
